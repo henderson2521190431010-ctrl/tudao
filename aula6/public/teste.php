@@ -4,8 +4,22 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use App\Config\Conexao;
 
-$conexao = new Conexao();
+$pdo = null;
 
-$pdo = $conexao->conectar();
+try {
 
-echo "Conectado com sucesso ao banco aula6!";
+    $conexao = new Conexao();
+
+    $pdo = $conexao->conectar();
+
+    if ($pdo !== null) {
+        echo "Conectado com sucesso ao banco aula6!";
+    } else {
+        echo "Não foi possível conectar ao banco.";
+    }
+
+} catch (PDOException $e) {
+
+    echo "Erro na conexão: " . $e->getMessage();
+
+}
