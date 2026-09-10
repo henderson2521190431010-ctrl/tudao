@@ -85,4 +85,4 @@ echo Se o remote origin ja existir, o proximo push sera feito normalmente.
 echo.
 git push -u origin main
 
-pause
+start https://github.com/henderson2521190431010-ctrl/tudao
