@@ -4,7 +4,7 @@ chcp 65001 >nul
 echo Criando README.md...
 
 (
-echo # 🚀 Tudão
+echo # 🚀 Tudão %date% %time%
 echo.
 echo ^> Projeto desenvolvido para estudos e práticas de desenvolvimento web.
 echo.
