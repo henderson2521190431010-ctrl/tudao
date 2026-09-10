@@ -10,34 +10,52 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/index.php">Nome Do Sistema</a>
+            <a class="navbar-brand" href="/index.php"> Sistema de controle
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSistema">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSistema">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu1</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">pessoa</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/aaaa-create.php">Cadastrar</a></li>
-                            <li><a class="dropdown-item" href="/bbb-list.php">Listar</a></li>
-                            <li><a class="dropdown-item" href="/ccc-pesquisar.php">Pesquisar</a></li>
+                            <li><a class="dropdown-item" href="/pessoas-create.php">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="/pessoas-list.php">Listar</a></li>
+                            <li><a class="dropdown-item" href="/pessoas-pesquisar.php">Pesquisar</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu2</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">movimentação</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/ddd-create.php">Cadastrar</a></li>
-                            <li><a class="dropdown-item" href="/eee-list.php">Listar</a></li>
+                            <li><a class="dropdown-item" href="/movimentacao-create.php">Cadastrar</a></li>
+                            <li><a class="dropdown-item" href="/movimentacao-list.php">Listar</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+
+
+
+
+
+
+
+
+
     <div class="container mt-4">
         <?php echo isset($content) ? $content : ""; ?>
     </div>
+
+
+
+
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
